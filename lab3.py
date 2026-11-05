@@ -1,7 +1,12 @@
-#Ввод числа
-number = int(input("введите число "))
-#четное /нечетное
-if number % 2 == 0:
-    print(f"Число {number} - четное")
+#Ввод чисел
+a = float(input("введите первое число: "))
+b = float(input("введите второе число: "))
+c = float(input("введите третье число: "))
+#узнать максимум
+if a >= b and a >= c:
+    maximum = a
+elif b >= a and b >= c:
+    maximum = b
 else:
-    print(f"Число {number} - нечетное")
+    maximum = c
+print(f"максимум: {maximum}")
