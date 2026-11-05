@@ -1,7 +1,13 @@
-year = int(input("Введите год: "))
+a = float(input("Введите сторону a: "))
+b = float(input("Введите сторону b: "))
+c = float(input("Введите сторону c: "))
 
-if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
-    print(f"{year} — високосный год")
+if a + b > c and a + c > b and b + c > a:
+    if a == b == c:
+        print("Равносторонний треугольник")
+    elif a == b or a == c or b == c:
+        print("Равнобедренный треугольник")
+    else:
+        print("Разносторонний треугольник")
 else:
-    print(f"{year} — не високосный год")
-    
+    print("Треугольник не существует")
