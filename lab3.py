@@ -1,12 +1,14 @@
-#Ввод чисел
-a = float(input("введите первое число: "))
-b = float(input("введите второе число: "))
-c = float(input("введите третье число: "))
-#узнать максимум
-if a >= b and a >= c:
-    maximum = a
-elif b >= a and b >= c:
-    maximum = b
+#Ввод возраста
+age = int(input("введите возраст: "))
+
+#определение класса среди возрастов
+if age < 0:
+    print("некорректный возраст")
+elif age <= 12:
+    print("ребенок")
+elif age <= 17:
+    print("подросток")
+elif age <= 64:
+    print("взрослый")
 else:
-    maximum = c
-print(f"максимум: {maximum}")
+    print("пожилой")
